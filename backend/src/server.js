@@ -16,7 +16,7 @@ io.on('connection', socket => {
     connectedUsers[user] = socket.id;
 });
 
-mongoose.connect('mongodb+srv://tindev:tindev@cluster0-mqki2.mongodb.net/tindev?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0-mqki2.mongodb.net/tindev?retryWrites=true&w=majority', {
     useNewUrlParser: true
 });
 
